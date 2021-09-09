@@ -4,17 +4,13 @@ test_square_root (__main__.TestExercice) ... ok
 test_to_celsius (__main__.TestExercice) ... FAIL
 test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... FAIL
-test_to_radians (__main__.TestExercice) ... FAIL
+test_to_radians (__main__.TestExercice) ... ok
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-<<<<<<< HEAD
-  File "C:\Users\super\Documents\Polycourses\INF1007\2021a-c01-ch3-exercices-naname1\test_exercice.py", line 95, in test_to_celsius
-=======
   File "test_exercice.py", line 95, in test_to_celsius
->>>>>>> cb0d27a3f2dce76f7d044189cd6e82b5cdf62b88
     self.assertListEqual(
 AssertionError: Lists differ: [-17.77777777777778, -31.666666666666668, 232.77777777777777] != [-17.77777777777778, -31.666666666666664, 232.77777777777777]
 
@@ -33,22 +29,18 @@ First differing element 1:
 FAIL: test_to_degrees (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-<<<<<<< HEAD
-  File "C:\Users\super\Documents\Polycourses\INF1007\2021a-c01-ch3-exercices-naname1\test_exercice.py", line 83, in test_to_degrees
-=======
   File "test_exercice.py", line 83, in test_to_degrees
->>>>>>> cb0d27a3f2dce76f7d044189cd6e82b5cdf62b88
     self.assertListEqual(
-AssertionError: Lists differ: [(114.59155902616465, 6875.493541569878, 41[194 chars]624)] != [(79.0980174562859, 5.881047377154118, 29.6[197 chars]998)]
+AssertionError: Lists differ: [(114, 35.493541569878744, 29.6124941927246[141 chars]998)] != [(79.0980174562859, 5.881047377154118, 29.6[197 chars]998)]
 
 First differing element 0:
-(114.59155902616465, 6875.493541569878, 412529.6124941927)
+(114, 35.493541569878744, 29.612494192724625)
 (79.0980174562859, 5.881047377154118, 29.612494192724625)
 
-- [(114.59155902616465, 6875.493541569878, 412529.6124941927),
--  (-229.1831180523293, -13750.987083139757, -825059.2249883855),
--  (286.4788975654116, 17188.733853924696, 1031324.0312354818),
--  (234.33973820850667, 14060.3842925104, 843623.057550624)]
+- [(114, 35.493541569878744, 29.612494192724625),
+-  (-229, -10.987083139757488, -59.22498838544925),
+-  (286, 28.73385392469686, 44.031235481811564),
+-  (234, 20.384292510402133, 23.057550624127998)]
 + [(79.0980174562859, 5.881047377154118, 29.612494192724625),
 +  (-278.1960349125718, 48.23790524569176, 0.7750116145507491),
 +  (257.74504364071475, -15.297381557114704, 44.031235481811564),
@@ -58,11 +50,7 @@ First differing element 0:
 FAIL: test_to_farenheit (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-<<<<<<< HEAD
-  File "C:\Users\super\Documents\Polycourses\INF1007\2021a-c01-ch3-exercices-naname1\test_exercice.py", line 107, in test_to_farenheit
-=======
   File "test_exercice.py", line 107, in test_to_farenheit
->>>>>>> cb0d27a3f2dce76f7d044189cd6e82b5cdf62b88
     self.assertListEqual(
 AssertionError: Lists differ: [32.0, -13.0, 843.8] != [32.0, -13.0, 843.8000000000001]
 
@@ -75,33 +63,7 @@ First differing element 2:
 ?                    ++++++++++++
  : Mauvais calcul de celsius -> farenheit
 
-======================================================================
-FAIL: test_to_radians (__main__.TestExercice)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-<<<<<<< HEAD
-  File "C:\Users\super\Documents\Polycourses\INF1007\2021a-c01-ch3-exercices-naname1\test_exercice.py", line 64, in test_to_radians
-=======
-  File "test_exercice.py", line 64, in test_to_radians
->>>>>>> cb0d27a3f2dce76f7d044189cd6e82b5cdf62b88
-    self.assertListEqual(
-AssertionError: Lists differ: [-0.08726646259971647, 0.17453292519943295, 6.2[29 chars]7318] != [-0.08668468618238503, 0.17598251810595048, 6.2[27 chars]2748]
+Ran 7 tests in 0.003s
 
-First differing element 0:
--0.08726646259971647
--0.08668468618238503
-
-+ [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748]
-- [-0.08726646259971647,
--  0.17453292519943295,
--  6.283185307179586,
--  6.981317007977318] : Mauvais calcul de degres -> radians
-
-----------------------------------------------------------------------
-<<<<<<< HEAD
-Ran 7 tests in 0.011s
-=======
-Ran 7 tests in 0.006s
->>>>>>> cb0d27a3f2dce76f7d044189cd6e82b5cdf62b88
-
-FAILED (failures=4)
+FAILED (failures=3)
