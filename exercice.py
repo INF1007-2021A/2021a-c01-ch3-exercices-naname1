@@ -28,8 +28,8 @@ def to_degrees(angle_rads: float) -> tuple:
     min_tot = angle_tot - angle_deg
     minutes = math.floor(min_tot*60)
 
-    secondes_tot = minutes - int(minutes)
-    secondes = math.floor(secondes_tot*60)
+    secondes_tot = minutes - math.floor(minutes)
+    secondes = secondes_tot*60
     return angle_deg, minutes, secondes
 
 
